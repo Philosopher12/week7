@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Add a developer</h1>
+        <hr>
+        <div>
+            <div>
+             <img src = "hogwarts.png" width="550px", height="100px" >
+            </div>
+<div class="center">
+    <a href = '/newtask'> Create a new task</a>
+    <a href = '/listtask'> List all tasks</a>
+    <a href = '/listdeveloper'> List all developers</a>
+    <a href="/deletetask"> Delete a Task by ID </a>
+    <a href="/deletecomptask"> Delete Completed Task </a>
+    <a href="/taskstatus"> Task Status </a>
+
+
+<form action = "addDev" method = "POST" id="devfrm">
+                <label>First Name:</label><br>
+                <input type="text" name="firstName"><br>
+                <label>Last Name:</label><br>
+                <input type="text" name="lastName"><br>
+                <label>Level:</label><br>
+                <select name="level">
+                    <option>EXPERT</option>
+                    <option>BEGINNER</option>
+                </select><br>
+                <label><b>Address</b></label><br>
+                <label>State:</label><br>
+                <input type="text" name="State"><br>
+                <label>Suburb:</label><br>
+                <input type="text" name="Suburb"><br>
+                <label>Street:</label><br>
+                <input type="text" name="Street"><br>
+                <label>Unit:</label><br>
+                <input type="text" name="Unit"><br>
+
+    <button type="submit" name="submit" form="devfrm">Add Developer</button> </form>
+</div>
+</body>
+
+</html>

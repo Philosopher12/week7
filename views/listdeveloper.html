@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+    <head>
+            <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>List of Developers</h1>
+        <hr>
+        <div>
+            <div>
+             <img src = "hogwarts.png" width="550px", height="100px" >
+            </div>
+<div class="center">
+    <a href = '/newtask'> Create a new task</a>
+    <a href = '/listtask'> List all tasks</a>
+    <a href = '/newdeveloper'> Create a new developer</a>
+    <a href="/deletetask"> Delete a Task by ID </a>
+    <a href="/deletecomptask"> Delete Completed Task </a>
+    <a href="/taskstatus"> Task Status </a>
+
+        
+                    <table>
+                            <tr>
+                                <td>Id</td>
+                                <td>First Name</td>
+                                <td>Last Name</td>
+                                <td>Level</td>
+                                <td>State</td>
+                                <td>Suburb</td>
+                                <td>Street</td>
+                                <td>Unit</td>
+                            </tr>
+                            <% for ( var i =0; i< devDb.length;i++){ %>
+                                <tr>
+                                    <td>
+                                        <%= devDb[i]._id %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].name.firstName %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].name.lastName %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].level %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].address.State %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].address.Suburb %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].address.Street %>
+                                    </td>
+                                    <td>
+                                        <%= devDb[i].address.Unit %>
+                                    </td>
+                                </tr>
+                                <% }%>
+                    </table>
+            </div>
+        </div>
+        
+    </body>
+</html>
